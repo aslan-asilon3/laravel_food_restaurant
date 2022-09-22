@@ -14,14 +14,35 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="asset-landingpage/css/style.css">
 
+    <style>
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          padding: 12px 16px;
+          z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+    </style>
+
 </head>
 <body>
-    
+
 <!-- header section starts      -->
 
 <header>
 
-    <a href="#" class="logo"><i class="fas fa-utensils"></i>resto.</a>
+    <a href="#" class="logo"><i class="fas fa-utensils"></i> Aslan Resto.</a>
 
     <nav class="navbar">
         <a class="active" href="#home">home</a>
@@ -37,6 +58,16 @@
         <i class="fas fa-search" id="search-icon"></i>
         <a href="#" class="fas fa-heart"></a>
         <a href="#" class="fas fa-shopping-cart"></a>
+
+        <div class="dropdown">
+            <a href="#" class="fas fa-lock"></a>
+            <div class="dropdown-content">
+            <a href="login">Login</a>
+            <br>
+            <a href="register">Register</a>
+            </div>
+        </div>
+
     </div>
 
 </header>
@@ -537,7 +568,7 @@
         </div>
 
     </div>
-    
+
 </section>
 
 <!-- review section ends -->
