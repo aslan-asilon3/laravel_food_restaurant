@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\FoodOrigin;
 
 class FoodOriginSeeder extends Seeder
 {
@@ -13,6 +14,16 @@ class FoodOriginSeeder extends Seeder
      */
     public function run()
     {
-        //
+        FoodOrigin::create([
+            'food_id' => '1',
+            'foodOrigin' => 'United State',
+            'image' => 'img1',
+        ]);
+
+        FoodOrigin::create([
+            'food_id' => '2',
+            'foodOrigin' => 'China',
+            'image' => 'img2',
+        ]);
     }
 }

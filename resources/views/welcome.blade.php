@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="asset-landingpage/css/style.css">
+    <link rel="stylesheet" href="{{asset('asset-landingpage/css/style.css')}}">
 
     <style>
         .dropdown {
@@ -62,7 +62,7 @@
         <div class="dropdown">
             <a href="#" class="fas fa-lock"></a>
             <div class="dropdown-content">
-            <a href="login">Login</a>
+            <a href="{{url('login')}}">Login</a>
             <br>
             <a href="register">Register</a>
             </div>
@@ -145,11 +145,12 @@
 
     <div class="box-container">
 
+        {{-- @foreach ($items as $item)
         <div class="box">
             <a href="#" class="fas fa-heart"></a>
             <a href="#" class="fas fa-eye"></a>
             <img src="asset-landingpage/images/dish-1.png" alt="">
-            <h3>tasty food</h3>
+            <h3>{{ $items->foodName }}</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -160,6 +161,7 @@
             <span>$15.99</span>
             <a href="#" class="btn">add to cart</a>
         </div>
+        @endforeach --}}
 
         <div class="box">
             <a href="#" class="fas fa-heart"></a>

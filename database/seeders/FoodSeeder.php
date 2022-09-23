@@ -15,27 +15,21 @@ class FoodSeeder extends Seeder
     public function run()
     {
         Food::create([
-
             'image' => 'img1',
             'foodName' => 'Nasi Goreng',
             'price' => 80000,
-            'foodRate' => '8',
-            'foodOrigin' => 'Indonesia',
+            'foodRate' => 8,
             'foodDiscount' => '80%',
             'foodDescription' => 'nice',
-
         ]);
 
         Food::create([
-
             'image' => 'img2',
             'foodName' => 'Spaggheti',
             'price' => 100000,
-            'foodRate' => '9',
-            'foodOrigin' => 'Italy',
+            'foodRate' => 9,
             'foodDiscount' => '-',
             'foodDescription' => 'Excellent',
-
         ]);
     }
 }

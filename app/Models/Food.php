@@ -16,7 +16,6 @@ class Food extends Model
         'foodName',
         'price',
         'foodRate',
-        'foodOrigin',
         'foodDiscount',
         'foodDescription',
     ];

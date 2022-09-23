@@ -15,12 +15,12 @@ class CreateFoodOriginsTable extends Migration
     {
         Schema::create('food_origins', function (Blueprint $table) {
             $table->id();
-            $table->integer('foodId')->unsigned();
+            $table->unsignedBigInteger('food_id');
             $table->string('foodOrigin')->length('100');
-            $table->string('foodImageCountry')->length('100');
+            $table->string('image')->length('100');
             $table->timestamps();
 
-            $table->foreign('foodId')->references('id')->on('Food')->onDelete('cascade');
+            $table->foreign('food_id')->references('id')->on('food')->onDelete('cascade');
         });
     }
 

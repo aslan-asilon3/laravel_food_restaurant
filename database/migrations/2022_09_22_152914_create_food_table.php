@@ -22,9 +22,7 @@ class CreateFoodTable extends Migration
 
             $table->integer('price')->length('12')->nullable();
 
-            $table->string('foodRate')->length('10')->nullable();
-
-            $table->string('foodOrigin')->length('50')->nullable();
+            $table->integer('foodRate')->length('10')->nullable();
 
             $table->string('foodDiscount')->length('50');
 

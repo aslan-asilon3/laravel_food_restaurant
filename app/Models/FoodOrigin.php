@@ -11,11 +11,10 @@ class FoodOrigin extends Model
     protected $guarded = [];
 
     protected $fillable = [
-        'foodId',
+        'food_id',
         'foodOrigin',
-        'foodImageCountry',
+        'image',
     ];
-
 
     public function Food()
     {
